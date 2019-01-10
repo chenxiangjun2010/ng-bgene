@@ -12,6 +12,7 @@ export class HeaderComponent {
   constructor(public settings: SettingsService) { }
 
   toggleCollapsedSidebar() {
+    console.log('12')
     this.settings.setLayout('collapsed', !this.settings.layout.collapsed);
   }
 
